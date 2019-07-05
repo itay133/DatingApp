@@ -11,7 +11,7 @@ namespace DatingApp.API.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    iD = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Username = table.Column<string>(nullable: true),
                     PasswordHash = table.Column<byte[]>(nullable: true),
@@ -19,7 +19,7 @@ namespace DatingApp.API.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.iD);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
         }
 

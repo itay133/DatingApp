@@ -20,7 +20,7 @@ namespace DatingApp.API.Migrations
 
             modelBuilder.Entity("DatingApp.API.Models.User", b =>
                 {
-                    b.Property<int>("iD")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<byte[]>("PasswordHash");
@@ -29,7 +29,7 @@ namespace DatingApp.API.Migrations
 
                     b.Property<string>("Username");
 
-                    b.HasKey("iD");
+                    b.HasKey("Id");
 
                     b.ToTable("Users");
                 });
